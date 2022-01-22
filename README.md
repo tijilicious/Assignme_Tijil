@@ -45,6 +45,8 @@ Answer -     Missing timestamps could be because the provisioned load is for eve
 Question - 3 - How would you solve this optimization problem - wherein at some time we’re overusing the capacity, and at other times, we’re under-using. How do we cut down on                the extra costs that we end up paying either way?
 
 Answer -       Solution 1- One of the solution is used above in the **APPROACH**. 
-               Solution 2- Another approach could be using the gradient descent method to reach to a minima of provisioned load using the computation load.
-               Solution 3- Using an ML model to train on the data set and minimising the loss function.
+
+  Solution 2- Another approach could be using the gradient descent method to reach to a minima of provisioned load using the computation load.
+               
+  Solution 3- Using an ML model to train on the data set and minimising the loss function.
               
