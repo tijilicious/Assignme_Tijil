@@ -33,14 +33,17 @@ Let the provisioned load be, P
  The reason behind using this particular loss function is because with this we get a better R-squared value for the best fit line then some other loss functions which can be found in the google sheet - https://docs.google.com/spreadsheets/d/1hjAL-5vt3iN7F1fWZM4VQHEHFLcY9SH-R4pXNN24pSA/edit#gid=1244042988
  
  Question 1 - What are the capacity usage patterns?
+ 
  Answer -     The capacity usage pattern shows that maximum computation cost will be incurred during evening, that is between 4 PM and 8 PM. Also there are are local maxima                 and minima in the usage pattern. Appears to be the highest demand is during the evening which shoeld be dealt with by trying to shift the overall computation 
               load to different times during the day. 
               
 Question 2 - What do you infer from the missing timestamps?
+
 Answer -     Missing timestamps could be because the provisioned load is for every secodnd in time and to monitor that changing load could be difficult. 
              Although, from the given timestamps we can find out that the local maxima and minima exists however the global maxima and minima is unlikely to change due to the              missing timestamps.
 
 Question - 3 - How would you solve this optimization problem - wherein at some time we’re overusing the capacity, and at other times, we’re under-using. How do we cut down on                the extra costs that we end up paying either way?
+
 Answer -       Solution 1- One of the solution is used above in the **APPROACH**. 
                Solution 2- Another approach could be using the gradient descent method to reach to a minima of provisioned load using the computation load.
                Solution 3- Using an ML model to train on the data set and minimising the loss function.
