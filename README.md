@@ -9,6 +9,7 @@ Since there is very less data available, it becomes hard to use any ML model to 
 
 **Approach**
 To minimize the losses incurred due to extra payment when under utilization is there and paying 2 times in case of over-utilization we need to find a loss function which should be minimised. 
+```
 Let the provisioned load be, P
         utilized load be, U
         Cost per load for provisioned load = 1
@@ -26,9 +27,10 @@ Let the provisioned load be, P
                       Extreme Cost, EC =  P  + 2 (U-P)
             When P>U, 
                       Extreme Cost, EC = U
+  ```
                       
  Hence, our aim is to fin the global minima between these two Extreme Costs.
- The reason behind using this particular loss function is because with this we get a better R-squared value for the best fit line then some other loss functions which can be found in the google shhet - https://docs.google.com/spreadsheets/d/1hjAL-5vt3iN7F1fWZM4VQHEHFLcY9SH-R4pXNN24pSA/edit#gid=1244042988
+ The reason behind using this particular loss function is because with this we get a better R-squared value for the best fit line then some other loss functions which can be found in the google sheet - https://docs.google.com/spreadsheets/d/1hjAL-5vt3iN7F1fWZM4VQHEHFLcY9SH-R4pXNN24pSA/edit#gid=1244042988
  
  Question 1 - What are the capacity usage patterns?
  Answer -     The capacity usage pattern shows that maximum computation cost will be incurred during evening, that is between 4 PM and 8 PM. Also there are are local maxima                 and minima in the usage pattern. Appears to be the highest demand is during the evening which shoeld be dealt with by trying to shift the overall computation 
